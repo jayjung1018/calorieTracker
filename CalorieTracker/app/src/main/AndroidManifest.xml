@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.upenn.cis350.calorietracker">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".AddTrackableActivity"/>
+        <activity android:name="ProfileActivity"/>
+        <activity android:name="NotificationActivity"/>
+        <activity android:name="NewNotificationActivity"/>
+	    <activity android:name="EditProfileActivity"></activity>
+        <activity android:name="HistoryActivity"></activity>
+        <activity android:name=".TabLayoutActivity"/>
+        <activity android:name=".AchievementsActivity"/>
+        <activity android:name="ProgressActivity"></activity>
+        <activity android:name="MealChart"></activity>
+        <activity android:name=".FriendsList"></activity>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+
+        <provider android:authorities="com.facebook.app.FacebookContentProvider975831639165943"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true"/>
+
+        <receiver android:name="edu.upenn.cis350.calorietracker.ResetReceiver"/>
+        <receiver android:name="edu.upenn.cis350.calorietracker.NotificationReceiver"/>
+
+    </application>
+
+
+</manifest>

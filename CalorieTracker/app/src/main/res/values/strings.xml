@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Calorie Tracker</string>
+
+    <!--Facebook Integration-->
+    <string name="facebook_app_id">975831639165943</string>
+
+    <!-- main label strings-->
+    <string name="calorieRemaining">Calories Remaining</string>
+    <string name="select">Select Trackable</string>
+    <string name="add">Add</string>
+    <string name="profile"> Set Profile</string>
+    <string name="progress"> Progress</string>
+    <string-array name = "gender">
+
+	<item>Male</item>
+
+	<item>Female</item>
+
+    </string-array>
+
+
+   <string-array name = "activity_level">
+
+	<item>Sedentary - Little to no exercise</item>
+
+	<item>Lightly Active - Exercise 1-3 times/week</item>
+
+	<item>Moderately Active - Exercise 3-5 times/week</item>
+
+	<item>Very Active - Hard exercise 6-7 times/week</item>
+
+    </string-array>
+
+    <string-array name = "mealtypes">
+
+        <item>Breakfast</item>
+
+        <item>Lunch</item>
+
+        <item>Dinner</item>
+
+        <item>Snack</item>
+
+    </string-array>
+
+    <string name="lists">Show Lists</string>
+</resources>

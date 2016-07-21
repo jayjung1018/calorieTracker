@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Calorie and Macro Distributions"
+        android:textSize="30dp"/>
+
+    <Switch android:text="Select Info"
+        android:id="@+id/select2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:showText="true"
+        android:splitTrack="true"
+        android:switchMinWidth="50sp"
+        android:switchPadding="50sp"
+        android:trackTint="@color/black"
+        android:height="50dp"
+        android:textOn="Calories"
+        android:textOff="Macros" />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

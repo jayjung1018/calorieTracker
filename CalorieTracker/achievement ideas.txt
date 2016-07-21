@@ -1,0 +1,17 @@
+achievement ideas:
+
+recorded your first meal! 0 ->Newbie
+deficit x calories! 1 -> Shredded 
+surplus x calories! 2 -> Bulky
+exercised for x minutes! 3 -> Fitness Guru
+favorited 5 foods! 4 -> Foodie
+favorited 5 exercises! 5 -> Exercise lover
+posted an achievement! 6 -> Achievement Hunter
+easter egg -> you found me 7
+
+
+
+todo:
+find pictures
+the achievements page itself -> dialogs for each button
+an achievement dialog that pops up when you unlock an achievement
